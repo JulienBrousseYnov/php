@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #FABC3F 0%, #821131 100%);
+    
+}
+
+/* PROFILE PICTURE */
+.profile-picture {
+    position: relative;
+    width: 80vw; 
+    height: 80vw; 
+    max-width: 200px; 
+    max-height: 200px; 
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-picture img {
+    border-radius: 50%; 
+    height: 100%; 
+    width: auto; 
+    object-fit: cover;
+}
+
+.profile-picture input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#profileImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Section */
+.title h1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 10vw; 
+    font-size: 6vw; 
+    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slidernbw 5s linear infinite;
+    user-select: none;
+}
+
+.title p {
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vw;
+    font-size: 2vw; 
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: slidernbw 5s linear infinite;
+    user-select: none;
+}
+
+/* Card for Profile Information */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90vw; 
+    max-width: 600px;
+}
+
+/* Informations Section */
+.informations p {
+    margin: 0.5rem 0;
+    font-size: 3vw; 
+}
+
+/* Styles for the form */
+form {
+    background-color: #caf7ff57;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90vw; 
+    max-width: 1000px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dee0e4;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="tel"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #d6c632;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #abcdff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 70vw;
+        height: 70vw; 
+    }
+
+    .title h1 {
+        font-size: 8vw; 
+    }
+
+    .title p {
+        font-size: 4vw; 
+    }
+
+    .card {
+        padding: 1rem; 
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form input[type="tel"],
+    form select,
+    form textarea {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 10vw;
+    }
+
+    .title p {
+        font-size: 5vw; 
+    }
+
+    .informations p {
+        font-size: 4vw; 
+    }
+
+    form input[type="submit"] {
+        padding: 0.5rem; 
+        font-size: 14px; 
+    }
+}

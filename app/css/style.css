@@ -1,0 +1,136 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #FABC3F 0%, #821131 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/*TITLE SECTION*/
+
+.title h1 {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20vw;
+    font-size: 5vw;
+    color: #FABC3F;
+    user-select: none;
+}
+
+.title p {
+    text-align: center;
+    justify-content: center;
+    margin-top: 1vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    color:  #FABC3F;
+    user-select: none;
+}
+
+/*BUTTON SECTION*/
+
+.cv button {
+    background-color: #44414191;
+    border-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    padding: 1vw 4vw;
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv button:hover {
+    background-image: linear-gradient(90deg, #FABC3F 0%, #E85C0D 50%, #C7253E 75%, #FABC3F 100%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+}
+
+@keyframes slidernbw {
+    to {
+        background-position: 20vw;
+    }
+}
+
+/*PROFILE SECTION*/
+
+.profile {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 90%;
+    width: 5vw;
+    height: 5vw;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile img {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#profileImg {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles for iPhone */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    .title h1 {
+        margin-top: 40vw;
+        font-size: 8vw;
+    }
+
+    .title p {
+        margin-top: 2vw;
+        font-size: 4vw;
+    }
+
+    .cv button {
+        top: 80vw;
+        width: 50vw;
+        size: 10vw;
+        padding: 4vw 5vw;
+        font-size: 3vw;
+    }
+
+    .profile {
+        top: 5%;
+        left: 80%;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #profileImg {
+        width: 15vw;
+        height: 15vw;
+    }
+}

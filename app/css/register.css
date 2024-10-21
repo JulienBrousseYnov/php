@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 1vw; 
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(180deg, #FABC3F 0%, #821131 100%);
+    background-repeat: no-repeat;
+}
+
+/* REGISTER SECTION */
+.register {
+    width: 20vw; 
+    background-color: #ffffff;
+    box-shadow: 0 0 0.45vw 0 rgba(0, 0, 0, 0.3); 
+    margin: 5vw auto; 
+}
+
+.register h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 1.2vw;
+    padding: 1vw 0 1vw 0; 
+    border-bottom: 0.05vw solid #dee0e4;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vw;
+}
+
+.register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw; 
+    height: 2.5vw; 
+    background-color: #3274d6;
+    color: #ffffff;
+}
+
+.register form input[type="text"],
+.register form input[type="email"],
+.register form input[type="password"] {
+    width: 15.5vw; 
+    height: 2.5vw; 
+    border: 0.05vw solid #dee0e4; 
+    margin-bottom: 1vw; 
+    padding: 0 0.75vw; 
+}
+
+.register form input[type="submit"] {
+    width: 100%;
+    padding: 0.75vw;
+    margin-top: 1vw; 
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.register form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+
+/* RESPONSIVE REGISTER SECTION */
+@media (max-width: 768px) {
+    .register {
+        width: 50vw; 
+    }
+
+    .register h1 {
+        font-size: 2vw; 
+    }
+
+    .register form label,
+    .register form input[type="text"],
+    .register form input[type="email"],
+    .register form input[type="password"] {
+        width: 40vw; 
+        height: 5vw; 
+    }
+
+    .register form input[type="submit"] {
+        padding: 1.5vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        width: 80vw; 
+    }
+
+    .register h1 {
+        font-size: 4vw; 
+    }
+
+    .register form label,
+    .register form input[type="text"],
+    .register form input[type="email"],
+    .register form input[type="password"] {
+        width: 70vw; 
+        height: 8vw; 
+    }
+
+    .register form input[type="submit"] {
+        padding: 2vw; 
+    }
+}
