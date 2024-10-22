@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(180deg, #FABC3F 0%, #821131 100%);
+    background: linear-gradient(180deg, #3c096c 0%, #ff9e00 100%);
 }
 
 /* LOGIN SECTION */
@@ -43,7 +43,7 @@ body {
     align-items: center;
     width: 2.5vw; 
     height: 2.5vw; 
-    background-color: #d6b032;
+    background-color: #ff9e00;
     color: #ffffff;
 }
 
@@ -59,7 +59,7 @@ body {
     width: 100%;
     padding: 0.75vw;
     margin-top: 1vw;
-    background-color: #d6c632;
+    background-color: #3c096c;
     border: 0;
     cursor: pointer;
     font-weight: bold;
@@ -68,7 +68,7 @@ body {
 }
 
 .login form input[type="submit"]:hover {
-    background-color: #c78228;
+    background-color: #ff9e00;
     transition: background-color 0.2s;
 }
 
@@ -121,7 +121,7 @@ body {
 .register-button {
     width: 5vw; 
     padding: 0.1vw; 
-    background-color: #d6b8329d; 
+    background-color: #ff9e00; 
     border: 0; 
     cursor: pointer; 
     font-weight: bold; 
@@ -136,6 +136,6 @@ body {
 }
 
 .register-button:hover {
-    background-color: #c78228; 
+    background-color: #3c096c; 
     transition: background-color 0.2s;
 }
