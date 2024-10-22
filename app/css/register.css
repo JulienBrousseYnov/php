@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(180deg, #FABC3F 0%, #821131 100%);
+    background: linear-gradient(180deg, #ff9e00 0%, #3c096c 100%);
     background-repeat: no-repeat;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .register h1 {
     text-align: center;
-    color: #5b6574;
+    color: #ff9e00;
     font-size: 1.2vw;
     padding: 1vw 0 1vw 0; 
     border-bottom: 0.05vw solid #dee0e4;
@@ -43,7 +43,7 @@ body {
     align-items: center;
     width: 16vw; 
     height: 2.5vw; 
-    background-color: #3274d6;
+    background-color: #3c096c ;
     color: #ffffff;
 }
 
@@ -61,7 +61,7 @@ body {
     width: 100%;
     padding: 0.75vw;
     margin-top: 1vw; 
-    background-color: #3274d6;
+    background-color: #ff9e00;
     border: 0;
     cursor: pointer;
     font-weight: bold;
