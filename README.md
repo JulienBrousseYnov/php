@@ -3,7 +3,7 @@
 Dans le cadre de nos études, nous devons réaliser un projet visant à créer un site CV. Ce projet a pour objectif de :
 
 - Développer plusieurs pages pour présenter différentes sections du CV (expérience professionnelle, formation, compétences, etc.)
-- L'apprentissage du ph et ses bonnes pratiques
+- L'apprentissage du php et ses bonnes pratiques
 
 ## Prérequis
 
